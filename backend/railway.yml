@@ -1,0 +1,10 @@
+# railway.yml
+
+services:
+  backend:
+    image: railway/node:16 # Node.js 16 image provided by Railway
+    env:
+      NODE_ENV: production # Example environment variable
+      # Add other environment variables as needed
+    buildCommand: npm install
+    runCommand: node server.js # Specify your actual start command here
